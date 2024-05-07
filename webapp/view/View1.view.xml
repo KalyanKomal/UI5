@@ -1,0 +1,24 @@
+<mvc:View xmlns:f="sap.f" controllerName="com.incture.project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    >
+    <Page id="page" title="{i18n>title}">
+    <f:ShellBar id="_IDGenShellBar1" title="1stPage" secondTitle="WELCOME" homeIcon="./resources/sap/ui/documentation/sdk/images/logo_sap.png"
+     showNotifications="true" notificationsNumber="3" showNavButton="true" showMenuButton="false" navButtonPressed="buttonpress" notificationsPressed="buttonpress">
+     <f:menu>
+     <Menu id="M1">
+     <MenuItem id="MI1" text="option1" icon="sap-icon://flight"></MenuItem>
+          <MenuItem id="MI2" text="option2" icon="sap-icon://car-rental"></MenuItem>
+
+     </Menu>
+     </f:menu>
+    <f:profile>
+    			<Avatar id="_IDGenAvatar1" initials="KK" backgroundColor="Random" />
+
+    </f:profile>
+    
+    
+    
+    </f:ShellBar>
+    </Page>
+</mvc:View>
