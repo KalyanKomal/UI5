@@ -8,10 +8,14 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("com.incture.project1.controller.View1", {
-            onInit: function () {
+            onInit: function (oEvent) {
 
             },buttonpress:function(){
                 alert("It is pressed");
-            }
+            },onSliderMoved: function (oEvent) {
+                var iValue = oEvent.getParameter("value");
+               // this.byId("_IDGenIconTabHeader1").setWidth(iValue + "%");
+                this.byId("_IDGenOverflowToolbar1").setWidth(iValue + "%");
+            },
         });
     });

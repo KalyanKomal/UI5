@@ -3,7 +3,7 @@
     xmlns="sap.m"
     >
     <Page id="page" title="{i18n>title}">
-    <f:ShellBar id="_IDGenShellBar1" title="1stPage" secondTitle="WELCOME" homeIcon="./resources/sap/ui/documentation/sdk/images/logo_sap.png"
+    <!--<f:ShellBar id="_IDGenShellBar1" title="1stPage" secondTitle="WELCOME" homeIcon="./resources/sap/ui/documentation/sdk/images/logo_sap.png"
      showNotifications="true" notificationsNumber="3" showNavButton="true" showMenuButton="false" navButtonPressed="buttonpress" notificationsPressed="buttonpress">
      <f:menu>
      <Menu id="M1">
@@ -18,8 +18,36 @@
 
     </f:profile>
     
-    
-    
-    </f:ShellBar>
+    </f:ShellBar>-->
+		<content>
+				<IconTabHeader  id="_IDGenIconTabHeader1" mode="Inline">
+		<items>
+			<IconTabFilter id="_IDGenIconTabFilter1" key="info" text="Info" />
+			<IconTabFilter id="_IDGenIconTabFilter2" key="attachments" text="Attachments" count="3" />
+			<IconTabFilter id="_IDGenIconTabFilter3" key="notes" text="Notes" count="12" />
+			<IconTabFilter id="_IDGenIconTabFilter4" key="people" text="People"/>
+		</items>
+	</IconTabHeader>
+  <VBox id="_IDGenVBox1">
+				<MessageStrip id="_IDGenMessageStrip1"
+					text="Use this slider to shrink the toolbars and observe their behavior. Note: the icon buttons display text only when in the overflow area."
+					type="Information"
+					showIcon="true">
+				</MessageStrip>
+
+				<Slider id="_IDGenSlider1" value="100" liveChange="onSliderMoved"/>
+			</VBox>
+
+		</content>
+    <footer >     <OverflowToolbar  id="_IDGenOverflowToolbar1" >
+    <Button id="_IDGenButton1" text="Button1" ></Button>
+    <Button id="_IDGenButton2" text="Button2"></Button>
+        <Button id="_IDGenButton3" text="Button3"></Button>
+    <Button id="_IDGenButton4" text="Button4"></Button>
+    <Button id="_IDGenButton5" text="Button5"></Button>
+    <Button id="_IDGenButton6" text="Button6"></Button>
+
+    </OverflowToolbar>
+    </footer>
     </Page>
 </mvc:View>
