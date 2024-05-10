@@ -37,6 +37,21 @@ sap.ui.define([
                 }
             },	hideBusyIndicator : function() {
                 BusyIndicator.hide();
-            },
+            }, 	onPIChangeValueButtonPressed : function (oEvent) {
+                var sSourceId = oEvent.getSource().getId();
+                 var   sButton = 'button';
+                    //We are getting the starting index where we will find button
+                   var iIndexOfButton = sSourceId.indexOf(sButton);
+                    //By this we are gonna extract tht index of the opreogress indicator.
+                  var  oProgressIndicator = this.getView().byId(sSourceId.substring(0, iIndexOfButton - 1));
+                    //From this we are getting whether the value is 0 or 50 or 100
+                   var  sValue = sSourceId.substring(iIndexOfButton + sButton.length);
+                   var  sPreviousValue = oProgressIndicator.getDisplayValue();
+                    console.log(iIndexOfButton,sValue,sPreviousValue);
+                   var  sAccText;
+                oProgressIndicator.setDisplayValue(sValue + '%');
+                oProgressIndicator.setPercentValue(sValue);
+                
+            }
         });
     });
