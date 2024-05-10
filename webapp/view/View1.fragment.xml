@@ -1,0 +1,33 @@
+<core:FragmentDefinition id="_IDGenFragmentDefinition1" xmlns:core="sap.i.core" xmnls="sap.m">
+<ActionSheet id="actionSheet"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	core:require="{ MessageToast: 'sap/m/MessageToast' }"
+	title="Choose Your Action"
+	showCancelButton="true"
+	placement="Right">
+	<Button id="_IDGenButton1"
+		text="Accept"
+		icon="sap-icon://accept"
+		press="MessageToast.show('Selected action is ' + ${$source>/text})" />
+	<Button id="_IDGenButton2"
+		text="Reject"
+		icon="sap-icon://decline"
+		press="MessageToast.show('Selected action is ' + ${$source>/text})" />
+	<Button id="_IDGenButton3"
+		text="Email"
+		icon="sap-icon://email"
+		press="MessageToast.show('Selected action is ' + ${$source>/text})" />
+	<Button id="_IDGenButton4"
+		text="Forward"
+		icon="sap-icon://forward"
+		press="MessageToast.show('Selected action is ' + ${$source>/text})" />
+	<Button id="_IDGenButton5"
+		text="Delete"
+		icon="sap-icon://delete"
+		press="MessageToast.show('Selected action is ' + ${$source>/text})" />
+	<Button id="_IDGenButton6"
+		text="Other"
+		press="MessageToast.show('Selected action is ' + ${$source>/text})" />
+</ActionSheet>
+		</core:FragmentDefinition>

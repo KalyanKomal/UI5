@@ -1,7 +1,45 @@
 <mvc:View controllerName="com.incture.project2.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m" xmlns:cards="sap.f.cards" xmlns:f="sap.f" xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
         <content />
+        <f:Card id="_IDGenCard1" class="sapUiMeduimMargin"         width="300px">
+	<f:header>
+	<cards:Header id="_IDGenHeader1" title="CARD HEADER" subtitle="This is an example of card" statusText="abcd" iconSrc="sap-icon://bus-public-transport"/>
+
+	</f:header>
+	<f:content>
+	<VBox id="_IDGenVBox1"
+				height="110px"
+				class="sapUiSmallMargin"
+				justifyContent="SpaceBetween">
+				<HBox id="_IDGenHBox1" justifyContent="SpaceBetween">
+					<ComboBox id="_IDGenComboBox1"
+						width="120px"
+						placeholder="From City"
+						items="{/cities}">
+						<core:Item id="_IDGenItem1"  text="{text}" />
+					</ComboBox>
+					<ComboBox id="_IDGenComboBox2"
+						width="120px"
+						placeholder="To City"
+						items="{/cities}">
+						<core:Item id="_IDGenItem2"  text="{text}" />
+					</ComboBox>
+				</HBox>
+				<HBox id="_IDGenHBox2" renderType="Bare" justifyContent="SpaceBetween">
+					<DatePicker id="_IDGenDatePicker1" width="200px" placeholder="Choose Date ..." />
+					<Button id="_IDGenButton1"
+						text="Book"
+						press=".onBookPress"
+						type="Emphasized"
+						class="sapUiTinyMarginBegin" />
+				</HBox>
+			</VBox>
+	</f:content>
+	
+	
+	
+	</f:Card>
     </Page>
 </mvc:View>
