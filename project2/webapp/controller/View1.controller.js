@@ -52,6 +52,36 @@ sap.ui.define([
                 oProgressIndicator.setDisplayValue(sValue + '%');
                 oProgressIndicator.setPercentValue(sValue);
                 
+            },	onPressNavToDetail: function () {
+                this.getSplitAppObj().to(this.createId("detailDetail"));
+            },
+    
+            onPressDetailBack: function () {
+                this.getSplitAppObj().backDetail();
+            },
+    
+            onPressMasterBack: function () {
+                this.getSplitAppObj().backMaster();
+            },
+    
+            onPressGoToMaster: function () {
+                this.getSplitAppObj().toMaster(this.createId("master2"));
+            },
+    
+            onListItemPress: function (oEvent) {
+                var sToPageId = oEvent.getParameter("listItem").getCustomData()[0].getValue();
+    
+                this.getSplitAppObj().toDetail(this.createId(sToPageId));
+            },getSplitAppObj: function () {
+                var result = this.byId("SplitAppDemo");
+                if (!result) {
+                    Log.info("SplitApp object can't be found");
+                }
+                return result;
+            },onPressModeBtn: function (oEvent) {
+                var sSplitAppMode = oEvent.getSource().getSelectedButton().getCustomData()[0].getValue();
+    console.log(sSplitAppMode);
+                this.getSplitAppObj().setMode(sSplitAppMode);
             }
         });
     });
