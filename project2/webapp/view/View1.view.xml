@@ -191,7 +191,7 @@
 				<Button id="_IDGenButton3" text="3" type="Accept" />
 			</FlexBox>
 		</Panel>-->
-		<HBox id="_IDGenHBox1"
+		<!--<HBox id="_IDGenHBox1"
 		fitContainer="true"
 		alignItems="Stretch"
 		class="sapUiSmallMargin nestedFlexboxes" height="300px">
@@ -240,6 +240,99 @@
 				<FlexItemData id="_IDGenFlexItemData8" growFactor="5" styleClass="item6" />
 			</core:layoutData>
 		</core:HTML>
-	</HBox>
+	</HBox>-->
+	<!--<VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+	<NotificationList id="_IDGenNotificationList1" >
+	<NotificationListGroup id="_IDGenNotificationListGroup1" 	title="Orders"
+				showCloseButton="true"
+				close=".onItemClose" collapsed="true" >
+<buttons>
+					<Button id="_IDGenButton1" text="Accept All" press=".onAcceptPress" />
+				</buttons>
+
+	<NotificationListItem id="_IDGenNotificationListItem1"
+					title="New order (#2525)"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc. Mauris non elementum orci, ut sollicitudin ligula. Vestibulum in ligula imperdiet, posuere tortor id, dictum nunc."
+					showCloseButton="true"
+					datetime="1 hour"
+					unread="true"
+					priority="Medium"
+					close=".onItemClose"
+					press=".onListItemPress"
+					
+					authorInitials="PK"
+					authorAvatarColor="Accent8" />
+	
+	<NotificationListItem id="_IDGenNotificationListItem2"
+					title="New order (#2524)"
+					description="Aliquam quis varius ligula. In justo lorem, lacinia ac ex at, vulputate dictum turpis. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+					showCloseButton="true"
+					datetime="3 days"
+					unread="true"
+					priority="None"
+					close=".onItemClose"
+					press=".onListItemPress"
+					authorInitials="SF"
+					authorAvatarColor="Random">
+					<buttons>
+						<Button id="_IDGenButton2" text="Accept" press=".onAcceptPress" />
+						<Button id="_IDGenButton3" text="Reject" press=".onRejectPress" />
+					</buttons>
+				</NotificationListItem>
+	</NotificationListGroup>
+	<NotificationListGroup id="_IDGenNotificationListGroup2" 	title="Orders2"
+				showCloseButton="true"
+				collapsed="true"
+				close=".onItemClose" >
+				<buttons>
+					<Button id="_IDGenButton6" text="Accept All" press=".onAcceptPress" />
+					<Button id="_IDGenButton7" text="Reject All" press=".onRejectPress" />
+				</buttons>
+	<NotificationListItem id="_IDGenNotificationListItem3"
+					title="New order (#2525)"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc. Mauris non elementum orci, ut sollicitudin ligula. Vestibulum in ligula imperdiet, posuere tortor id, dictum nunc. "
+					showCloseButton="true"
+					datetime="1 hour"
+					unread="true"
+					priority="None"
+					close=".onItemClose"
+					press=".onListItemPress"
+					authorInitials="BN" />
+				<NotificationListItem id="_IDGenNotificationListItem4"
+					title="New order (#2524)"
+					description="Aliquam quis varius ligula. In justo lorem, lacinia ac ex at, vulputate dictum turpis."
+					showCloseButton="true"
+					datetime="3 days"
+					unread="true"
+					priority="High"
+					close=".onItemClose"
+					press=".onListItemPress"
+					authorPicture="sap-icon://car-rental">
+					<buttons>
+						<Button id="_IDGenButton4" text="Accept" press=".onAcceptPress" />
+						<Button id="_IDGenButton5" text="Reject" press=".onRejectPress" />
+					</buttons>
+				</NotificationListItem>
+	
+	
+	</NotificationListGroup>
+	
+	
+	</NotificationList>
+	
+	</VBox>-->
+		<VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+<NotificationListGroup id="_IDGenNotificationListGroup1"
+				title="Notification Group"
+				showCloseButton="true"
+				collapsed="false"
+				close=".onItemClose"
+				showEmptyGroup="true"
+				enableCollapseButtonWhenEmpty="true">
+				<buttons>
+					<Button id="_IDGenButton1" text="Load notifications" press=".onLoadNotificationsPress" />
+				</buttons>
+			</NotificationListGroup>
+			</VBox>
     </Page>
 </mvc:View>
