@@ -108,7 +108,7 @@
 			</FlexBox>
             </l:content>
             </l:VerticalLayout>-->
-			<SplitApp
+		<!--	<SplitApp
 		id="SplitAppDemo"
 		initialDetail="detail"
 		initialMaster="master">
@@ -179,6 +179,67 @@
 				</List>
 			</Page>
 		</masterPages>
-	</SplitApp>
+	</SplitApp>-->
+		<!--<Panel id="_IDGenPanel1" headerText="down right">
+			<FlexBox id="_IDGenFlexBox1"
+				height="100px"
+				alignItems="End"
+				justifyContent="End"
+				backgroundDesign="Solid">
+				<Button id="_IDGenButton1" text="1" type="Emphasized" class="sapUiSmallMarginEnd" />
+				<Button id="_IDGenButton2" text="2" type="Reject" class="sapUiSmallMarginEnd" />
+				<Button id="_IDGenButton3" text="3" type="Accept" />
+			</FlexBox>
+		</Panel>-->
+		<HBox id="_IDGenHBox1"
+		fitContainer="true"
+		alignItems="Stretch"
+		class="sapUiSmallMargin nestedFlexboxes" height="300px">
+		<core:HTML id="_IDGenHTML1" content="&lt;h2&gt;1&lt;/h2&gt;">
+			<core:layoutData>
+				<FlexItemData id="_IDGenFlexItemData1" growFactor="2" styleClass="item1" />
+			</core:layoutData>
+		</core:HTML>
+		<core:HTML id="_IDGenHTML2" content="&lt;h2&gt;2&lt;/h2&gt;" >
+			<core:layoutData>
+				<FlexItemData id="_IDGenFlexItemData2" growFactor="3" styleClass="item2" />
+			</core:layoutData>
+		</core:HTML>
+
+		<VBox id="_IDGenVBox1" fitContainer="true">
+			<layoutData>
+				<FlexItemData id="_IDGenFlexItemData3" growFactor="2" />
+			</layoutData>
+
+			<core:HTML id="_IDGenHTML3" content="&lt;h2&gt;3&lt;/h2&gt;">
+				<core:layoutData>
+					<FlexItemData id="_IDGenFlexItemData4" growFactor="5" styleClass="item3" />
+				</core:layoutData>
+			</core:HTML>
+
+			<HBox id="_IDGenHBox2" fitContainer="true" alignItems="Stretch">
+				<layoutData>
+					<FlexItemData id="_IDGenFlexItemData5" growFactor="3" />
+				</layoutData>
+
+				<core:HTML id="_IDGenHTML4" content="&lt;h2&gt;4&lt;/h2&gt;">
+					<core:layoutData>
+						<FlexItemData id="_IDGenFlexItemData6" growFactor="1" styleClass="item4" />
+					</core:layoutData>
+				</core:HTML>
+				<core:HTML id="_IDGenHTML5" content="&lt;h2&gt;5&lt;/h2&gt;">
+					<core:layoutData>
+						<FlexItemData id="_IDGenFlexItemData7" growFactor="1" styleClass="item5" />
+					</core:layoutData>
+				</core:HTML>
+			</HBox>
+		</VBox>
+
+		<core:HTML id="_IDGenHTML6" content="&lt;h2&gt;6&lt;/h2&gt;">
+			<core:layoutData>
+				<FlexItemData id="_IDGenFlexItemData8" growFactor="5" styleClass="item6" />
+			</core:layoutData>
+		</core:HTML>
+	</HBox>
     </Page>
 </mvc:View>
